@@ -20,7 +20,7 @@ FROM mcr.microsoft.com/dotnet/aspnet:10.0 AS final
 WORKDIR /app
 
 # Create a non-root user for security
-RUN adduser --disabled-password --gecos "" appuser && chown -R appuser /app
+RUN useradd -m appuser && chown -R appuser /app
 USER appuser
 
 COPY --from=publish /app/publish .
