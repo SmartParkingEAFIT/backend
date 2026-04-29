@@ -18,4 +18,8 @@
     <ProjectReference Include="..\SmartParkingAppEAFIT.Domain\SmartParkingAppEAFIT.Domain.csproj" />
   </ItemGroup>
 
+	<ItemGroup>
+		<AdditionalFiles Include="stylecop.json" />
+	</ItemGroup>
+
 </Project>

@@ -1,3 +1,7 @@
 <Solution>
   <Project Path="SmartParkingAppEAFIT.API/SmartParkingAppEAFIT.API.csproj" />
+  <Project Path="SmartParkingAppEAFIT.Application/SmartParkingAppEAFIT.Application.csproj" />
+  <Project Path="SmartParkingAppEAFIT.Domain/SmartParkingAppEAFIT.Domain.csproj" />
+  <Project Path="SmartParkingAppEAFIT.Infrastructure/SmartParkingAppEAFIT.Infrastructure.csproj" />
+  <Project Path="SmartParkingAppEAFIT.Shared/SmartParkingAppEAFIT.Shared.csproj" />
 </Solution>

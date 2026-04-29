@@ -13,4 +13,12 @@
     </PackageReference>
   </ItemGroup>
 
+	<ItemGroup>
+		<AdditionalFiles Include="stylecop.json" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Folder Include="Entities\" />
+	</ItemGroup>
+
 </Project>

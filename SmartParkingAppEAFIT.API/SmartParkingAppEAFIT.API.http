@@ -1,6 +1,6 @@
-@SmartParkingAppEAFIT.API_HostAddress = http://localhost:5191
+@SmartParkingAppEAFIT..API_HostAddress = http://localhost:5191
 
-GET {{SmartParkingAppEAFIT.API_HostAddress}}/weatherforecast/
+GET {{SmartParkingAppEAFIT..API_HostAddress}}/weatherforecast/
 Accept: application/json
 
 ###
