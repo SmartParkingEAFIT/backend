@@ -4,14 +4,14 @@
 
 namespace SmartParkingAppEAFIT.Infrastructure.Extensions
 {
+    using Microsoft.EntityFrameworkCore;
+    using Microsoft.Extensions.Configuration;
+    using Microsoft.Extensions.DependencyInjection;
     using SmartParkingAppEAFIT.Domain.Interfaces.UnitOfWorks;
     using SmartParkingAppEAFIT.Domain.Interfaces.Utils;
     using SmartParkingAppEAFIT.Infrastructure.Data;
     using SmartParkingAppEAFIT.Infrastructure.Http;
     using SmartParkingAppEAFIT.Infrastructure.Repositories.UnitOfWorks;
-    using Microsoft.EntityFrameworkCore;
-    using Microsoft.Extensions.Configuration;
-    using Microsoft.Extensions.DependencyInjection;
 
     /// <summary>
     /// Esta clase de extensión proporciona métodos para configurar los servicios de infraestructura en la aplicación,
