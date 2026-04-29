@@ -3,6 +3,7 @@
 // </copyright>
 
 using SmartParkingAppEAFIT.API.Extensions;
+using SmartParkingAppEAFIT.API.Hubs;
 using SmartParkingAppEAFIT.Application.Extensions;
 using SmartParkingAppEAFIT.Infrastructure.Extensions;
 
@@ -53,12 +54,16 @@ builder.Services.AddControllers()
         options.JsonSerializerOptions.DefaultIgnoreCondition = System.Text.Json.Serialization.JsonIgnoreCondition.WhenWritingNull;
     });
 
+// Add SignalR for real-time communication
+builder.Services.AddSignalR();
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
+
     app.UseSwaggerUI();
 }
 
@@ -76,5 +81,7 @@ app.UseAuthorization();
 
 // Map controllers
 app.MapControllers();
+
+app.MapHub<ChatHub>("/chat");
 
 app.Run();
