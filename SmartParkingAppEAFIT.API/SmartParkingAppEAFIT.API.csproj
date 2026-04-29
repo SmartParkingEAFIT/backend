@@ -7,7 +7,23 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="FluentValidation.DependencyInjectionExtensions" Version="12.1.1" />
     <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="10.0.5" />
+    <PackageReference Include="StyleCop.Analyzers" Version="1.1.118">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\SmartParkingAppEAFIT.Application\SmartParkingAppEAFIT.Application.csproj" />
+    <ProjectReference Include="..\SmartParkingAppEAFIT.Infrastructure\SmartParkingAppEAFIT.Infrastructure.csproj" />
+    <ProjectReference Include="..\SmartParkingAppEAFIT.Shared\SmartParkingAppEAFIT.Shared.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Validators\" />
+    <Folder Include="Extensions\" />
   </ItemGroup>
 
 </Project>
